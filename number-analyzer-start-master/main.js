@@ -20,6 +20,30 @@ function analyzeNumber() {
 
 // Analyze Functions
 
-function getSign() {
-    document.getElementById('sign').innerHTML = getSign(numInput);
+function getSign(num) {
+    if (num > 0) {
+        return 'pos'
+    } else if (num < 0){
+        return 'neg'
+    } else {
+        return 'zero'
+    }
+}
+
+function evenOrOdd(num) {
+    if (num % 2 == 0 ) {
+        return 'even'
+    } else {
+        return 'odd'
+    }
+    
+}
+
+
+function multipleOf10(num) {
+    if (num % 10 == 0 ) {
+        return 'yes'
+    } else {
+        return 'no'
+    }
 }
